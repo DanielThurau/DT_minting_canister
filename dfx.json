@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "DT_minting_canister_backend": {
+      "candid": "src/DT_minting_canister_backend/DT_minting_canister_backend.did",
+      "package": "DT_minting_canister_backend",
+      "type": "rust"
+    },
+    "DT_minting_canister_frontend": {
+      "dependencies": [
+        "DT_minting_canister_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/DT_minting_canister_frontend/src/index.html"
+      },
+      "source": [
+        "src/DT_minting_canister_frontend/assets",
+        "dist/DT_minting_canister_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
