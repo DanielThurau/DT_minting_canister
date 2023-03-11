@@ -1,4 +1,4 @@
-import { DT_minting_canister_backend } from "../../declarations/DT_minting_canister_backend";
+import { DT_minting_canister } from "../../declarations/DT_minting_canister";
 
 document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -9,7 +9,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
   button.setAttribute("disabled", true);
 
   // Interact with foo actor, calling the greet method
-  const greeting = await DT_minting_canister_backend.greet(name);
+  const greeting = await DT_minting_canister.greet(name);
 
   button.removeAttribute("disabled");
 

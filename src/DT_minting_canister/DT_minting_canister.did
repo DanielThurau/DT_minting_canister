@@ -1,0 +1,7 @@
+type InitPayload = record {
+
+};
+
+service : (InitPayload) -> {
+    "greet": (text) -> (text) query;
+}

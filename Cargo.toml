@@ -1,4 +1,4 @@
 [workspace]
 members = [
-    "src/DT_minting_canister_backend",
+    "src/DT_minting_canister",
 ]

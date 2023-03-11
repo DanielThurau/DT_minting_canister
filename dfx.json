@@ -1,13 +1,13 @@
 {
   "canisters": {
-    "DT_minting_canister_backend": {
-      "candid": "src/DT_minting_canister_backend/DT_minting_canister_backend.did",
-      "package": "DT_minting_canister_backend",
+    "DT_minting_canister": {
+      "candid": "src/DT_minting_canister/DT_minting_canister.did",
+      "package": "DT_minting_canister",
       "type": "rust"
     },
     "DT_minting_canister_frontend": {
       "dependencies": [
-        "DT_minting_canister_backend"
+        "DT_minting_canister"
       ],
       "frontend": {
         "entrypoint": "src/DT_minting_canister_frontend/src/index.html"
